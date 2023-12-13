@@ -8,3 +8,10 @@ function removeChar(str){
 /* One line
 let removeChar = (str) => str.substring(1,str.length-1)
 */
+
+/* str.slice also works in this instance:
+
+function removeChar(str) {
+  return str.slice(1, -1);
+}
+*/
