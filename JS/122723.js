@@ -11,8 +11,13 @@ Please keep in mind that the test cases ensure that the number of people in the 
 
 The second value in the first pair in the array is 0, since the bus is empty in the first bus stop.
 
+P: An array reperesenting bus stops, each bus stop has an array representing passengers getting on/off the bus.
+R: Return the total number of people left
+E: [[10,0],[3,5],[5,8]],5
+   [[3,0],[9,1],[4,10],[12,2],[6,1],[7,10]],17
 P: 
-R:
-E:
-P:
 */
+
+
+const number = (busStops) => busStops.reduce((rem, [on, off]) => rem + on - off, 0);
+
